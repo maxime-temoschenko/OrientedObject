@@ -1,0 +1,29 @@
+a)
+to make the distinction between the implementation and the interface.
+One could use the object knowing its interface without having any single information about its implementation.
+Therefore, if on might change the implementation later, the other users would not have to care about it.
+It make the code more modular, flexible and elegant.
+
+b)
+No it doesn't repsect the subsitution principle.
+It is limitation inheritance.
+c)
+the first instruction of a constructor is to call its parent constructor or another constructor of the same object.
+The default parent constructor is caller. However, one might change the parent construcor by
+specifiying which construcor to call, it has to be the first instruction of the constructor.
+this is done with the keyword super.
+
+A construcor can call an another construcor with the keyword this. The other constructor will be responsible
+to do the constructor chaining.
+
+d)
+Instead of defining several classes which only differ on the type of the data used.
+One might use generic classes to permit the same class to use differents kind of datas.
+
+e) 
+there are Class extends Thread -> the class has to define abstract method run()
+and the constructor has to call its parent construcot with a string super(string); which provides a name for the Thread
+-> instatiating such a class -> initial state . 
+
+class implements Runnable -> the class has to define the interface which is the abstract method run
+class can inherit from other arbitrary class and extends one another classes and implements others.

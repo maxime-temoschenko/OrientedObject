@@ -1,0 +1,31 @@
+Constructors correspond to a set of instructions which is executed
+each time that a class is instatiated.
+yes they can call other constructors thanks to this(param); It is used
+when several constructors share the same piece of code. Also, when
+a class is derived from another one then it first instruction is to
+call its parent constructor which must be done either implictely
+or not.
+
+b)
+an abstract class is class which can't be directly instantiated. Yes abstrcats
+classes can define non-abstract methods . the abstract methods have
+the qualifier abstract.
+
+c) It is generalization since Integer are a subset of real number.
+Obvioulsy it doesn't respect the subsitution principle.
+
+d)
+Check Excepeptions are exceptions that can occur
+while perfoming specific operations meanwhile runtime  excepetions are
+exceptions which can be triggered everywhere : Empty reference, insufficient memory
+
+e) Java genericity mechanism disappears after compilation.
+It is called type erasure. As a consequence, one cannot program
+operations rey on the value of type parameters at runtime.
+f) this code acquiere the lock on the object v
+when synchronized is used as a qualifier on a method declaration. It means
+that the thread will acquiere the lock of this corresponding object
+However, that is not always what we intend to do
+example : void do(myObject v)
+we would like to acquiere the lock on v not on the instance on which
+we call do.

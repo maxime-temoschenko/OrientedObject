@@ -1,0 +1,22 @@
+1)
+The purpose to define abstract classes is to have inherited classes
+share at one time several characteristics and also to let those classes
+specialize defined parts thanks to abstract methods. It enforce the 
+specification inheritance and the substitution principle. Abstract classes
+can't be directly instatiated.
+2)
+The limited form in java is that one classe can specialize one class
+and specify multiple characteristics. So it can extends one class but can
+implements several classes. 
+a unique specialization associated with multiple specification.
+3)
+Whether this exceptions must be caught in the body of this method
+thanks to catch clause or it must trigger the exception by declaring
+explicitely into the declaration via throws keyword.
+
+4)
+This is prohibited because java genericity mechanism is disappears after compilation.
+After having performe type checking, the compiler removes all information
+about type paramters(type erasure).
+As a consequence, one cannot program operation that rely on the value
+of type paramters at rune time.

@@ -1,0 +1,18 @@
+
+
+class badCode
+
+
+    main(){
+    Coordinates coord1 = new Coordinates(1,2);
+    Coordinates coord2 = new Coordinates(4,4);
+
+    LineSegment ls = new LineSegment(coord1, cooord2);
+    // Print ls : ls.toString()
+    // ([(1,2), (4,4)]
+
+    coord1.translate(1,1);
+    // Corruption of ls
+    // print Ls : ls.toString()
+    // 
+}

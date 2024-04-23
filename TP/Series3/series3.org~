@@ -1,0 +1,24 @@
+
+
+* Question 1
+
+** How does the Coordinates class handle encapsulation ?
+Variables (x and y) are private members.
+Get Methods to have the value of the coordinates (public method), indirect access.
+The only way to change the value of the coordinates is through translation.
+** Why are there several constructors ? What mechanism is at play here ?
+One constructor with default coordinates (0, 0) and one constructor with specified
+coordinates determined at instantiation.
+
+Mechanism : Constructor Polymorphism (see slides 70 of theorical lecture)
+
+** Read main(). Do a and b reference distinct Objects ?
+
+No, evaluation of the form : new Class() return a *reference* to this Object (Not the object itself !)
+So, Coordinates b = a; just copy the reference to the object, It doesn't copy the object itself
+
+(see slides 62)
+
+
+** Modify main() to change what we have observed
+

@@ -1,0 +1,23 @@
+a)
+If two different threads call increment at same time.
+Each thread maintain its own stack of instance variable
+Therefore there will both have value = 0 in their local stacks.
+Both will increment to 1 and rewrite this value to the main stack.
+So from two calls to increment the finale value will be equal to 1.
+
+b)
+public class Couter
+{
+    private int value = 0;
+    public synchronized increment(){
+        ++value;
+    }
+    public synchronized int getValue(){
+        return value;
+    }
+}
+Only one thread can acquiere the lock on Counter.
+Meanwhile, the other threads will be blocked.
+We have to use synchronized because several threads
+try to modfiy the state of this shared object while
+peforming non atomic sequences of operation.

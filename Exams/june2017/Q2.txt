@@ -1,0 +1,22 @@
+1)
+no because Abstract classe can define functions meanwhile interface can only declare functions
+
+2)
+It is a checked exception.
+Runtime exceptions are exceptions that can occur at any time during the execution of the program.
+In constract, checked exceptions correspond to well-defined exceptions.
+Those are exceptions that occu while performic specific operations.
+3)
+The resolution is done thanks to constructor chaining which goes from the most parent class to the class itself.
+
+4)
+It is not possible because of the type erasure of the genericity of java.
+At runtime the type T is unknown.
+
+4)
+oui , ex new Concurrent(i1,i2).start = alpha
+        et new Concurrent(i2, i1).start = beta
+Exemple possible d'exécution:
+alpha prend le lock sur i1,
+beta prend le lock sur i2,
+-> deadlock ! 

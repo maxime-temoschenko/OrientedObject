@@ -1,0 +1,21 @@
+1.
+An object are data structures that are oresent in memory during program execution.
+An object is an instance of a class.
+
+2.
+Polymporphic methods are methods which share the same name with-in the same class.
+We can distinguish them by the different signatures.
+Its signature is represented by its  its function name, the size and type of its parameters list.
+They are useful when several methods do similar things but with different parameters.
+
+3. 
+Java allows one class to specialize/extends one class and specify/implements several interfaces.
+
+4.
+Source files grouped in the same folder are in the same package.
+
+5.
+The serialization is useful to characterize a given object -> class, -> state and similar infromation 
+about auxiliary obejects that it references.
+It makes it possible to persistently store an object
+and to transmit an object from a program to another.

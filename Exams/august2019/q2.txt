@@ -1,0 +1,32 @@
+a) Polymorphic methods are methods that can take many forms.
+Several methods can have the same name in a class.
+However their signature have to be different.
+The signature is represented by the return type, the name method
+and also the number and types of its parameters.
+b)
+
+int[][] array = new int[100][]
+for(int i = 0; i < 100; ++i)
+if( (i+1)%2 == 0)
+    array[i] = new int[500];
+else
+    array[i] = new int[1000];
+
+c) In java a class can specialize one class and specify an undefined
+number of others classes. So it extends one class but can implements
+severals one.
+
+d) The construtor chaining is the order in which the several
+constructors of the hierarchy are called. It goes from
+the base to the derived class (Object class to actual class).
+To do so, the java imposes that the first instruction of a constructor
+is to call its parent constructor thanks to super keyword.
+
+e) When the method doesn't catch a checked exception/ doesn't hanlde
+it. It is mandatory to define that this expection is expected to be
+handled by the calling method
+
+f) notify() wakes and make it runnable again a single thread
+waiting for the current object.
+
+NotifyAll() wakes up every thread waiting for the current object.

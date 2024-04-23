@@ -1,0 +1,33 @@
+a)
+the first code will compile. we can dynamically bound
+an object to a reference of a parent class.
+2.
+It will also compile because the reference
+is the same type as the object instatiated.
+3.
+However the third code is not corrrect since 
+we can't dynamically instantiate an object to 
+a reference of a child class. since the object
+has not the all the attributes of the child class.
+
+b)
+1)
+Tomato
+Cheese
+Ham
+Pineapple
+Base
+because the method of an object are accessed by dynamic
+link and the instance variables are accessed by static link.
+
+2.
+Tomato
+Cheese
+Ham
+Pineapple
+Hawaiian
+for the same reasons.
+
+3.
+Correction : 
+Pizza mp = new Pizza();
